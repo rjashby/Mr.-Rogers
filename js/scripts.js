@@ -15,10 +15,10 @@ function rogers(number) {
   initialArray.forEach(function(number) {
     if (number === "1") {
       responseArray.push("Beep!")
-    } else if (number !== "1") {
-    responseArray.push(number);
-    console.log(typeof responseArray[0])
-    console.log(typeof responseArray[1])
+    } else if (number === "2") {
+      responseArray.push("Boop!")
+    } else {
+      responseArray.push(number);
     }
   });
   return responseArray;
