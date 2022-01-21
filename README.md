@@ -75,7 +75,15 @@ Expected Output: ["0", "1", "2", "3", "4", "5"]
 
 Test: "Function should pass previous tests, and change '32' to the string 'Won't you be my neighbor?'"
 Code: rogers(32)
-Expected Output: [0, 'Beep!', 'Boop!', "Won't you be my neighbor?", 4, 5, ... "Won't you be my neighbor?"]
+Expected Output: [0, 'Beep!', 'Boop!', "Won't you be my neighbor?", 4, 5, ... 'Won't you be my neighbor?']
+
+Test: "Function should pass previous tests, and change '32' to the string 'Won't you be my neighbor?'"
+Code: rogers(21)
+Expected Output: [0, 'Beep!', 'Boop!', "Won't you be my neighbor?", 4, 5, ... 'Boop!']
+
+Test: "Function should pass previous tests, and change '32' to the string 'Won't you be my neighbor?'"
+Code: rogers(13)
+Expected Output: [0, 'Beep!', 'Boop!', "Won't you be my neighbor?", 4, 5, ... 'Won't you be my neighbor?']
 
 ## Known Bugs 
 

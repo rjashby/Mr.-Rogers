@@ -3,23 +3,19 @@ function rogers(number) {
     for (let index = 0; index <= number; index ++) {
       initialArray.push(index);
     };
-    console.log(initialArray);
     const responseArray = []
   initialArray.forEach(function(number) {
-    if (number === 1) {
-      responseArray.push("Beep!");
-    } else if (number === 2) {
-      responseArray.push("Boop!");
-    } else if (number === 3) {
+    if (number.toString().includes(3)) {
       responseArray.push("Won't you be my neighbor?");
+    } else if (number.toString().includes(2)) {
+      responseArray.push("Boop!");
+    } else if (number.toString().includes(1)) {
+      responseArray.push("Beep!");
     } else {
       responseArray.push(number);
     }
   });
-  // console.log(responseArray[12]);
-  // console.log(responseArray[20]);
-  // console.log(responseArray[32]);
-  $(".output").text(responseArray);
+  $(".output").html(responseArray);
   return responseArray;
 }
 
