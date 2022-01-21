@@ -13,12 +13,14 @@ function rogers(number) {
   let initialArray = number.toString().split("");
   let responseArray = []
   initialArray.forEach(function(number) {
-    if (number === "1") {
-      responseArray.push("Beep!")
+    if (number[i] === "3" && number[i+1] === "2") {
+      responseArray.push("Won't you be my neighbor?");
+    } else if (number === "1") {
+      responseArray.push("Beep!");
     } else if (number === "2") {
-      responseArray.push("Boop!")
+      responseArray.push("Boop!");
     } else if (number === "3") {
-      responseArray.push("Won't you be my neighbor?")
+      responseArray.push("Won't you be my neighbor?");
     } else {
       responseArray.push(number);
     }
