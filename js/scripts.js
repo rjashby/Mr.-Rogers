@@ -10,8 +10,10 @@ $(document).ready(function() {
 });
 
 function rogers(number) {
-  
+  let initialArray = number.toString().split("");
   let responseArray = []
-  responseArray.push(number);
+  initialArray.forEach(function(number) {
+    responseArray.push(number);
+  });
   return responseArray;
 }
