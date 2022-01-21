@@ -45,6 +45,15 @@ _This application will_
 
 3) _Follow the steps above to view, edit, and open the files as needed._
 
+## Tests/Specs
+
+Describe: rogers(number)
+
+Test: "Function should take in a single number and return an array of that number."
+Code: rogers(1)
+Expected Output: [1]
+
+
 ## Known Bugs 
 
 * _No Known Bugs_  

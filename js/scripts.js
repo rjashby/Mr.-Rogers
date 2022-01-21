@@ -8,3 +8,7 @@ $(document).ready(function() {
     window.scrollTo(0,document.body.scrollHeight);
   });
 });
+
+function rogers(number) {
+  
+}
