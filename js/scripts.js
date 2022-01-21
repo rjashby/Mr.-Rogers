@@ -10,5 +10,7 @@ $(document).ready(function() {
 });
 
 function rogers(number) {
-  
+  let responseArray = []
+  responseArray.push(number);
+  return responseArray;
 }
