@@ -57,6 +57,10 @@ Test: "Function should take in a multi-digit number and return an array of that 
 Code: rogers(123)
 Expected Output: [1, 2, 3]
 
+Test: "Function should take in a multi-digit number, return an array, and change all '1' digits to the string 'Beep!'"
+Code: rogers(123)
+Expected Output: ["Beep!", 2, 3]
+
 ## Known Bugs 
 
 * _No Known Bugs_  
