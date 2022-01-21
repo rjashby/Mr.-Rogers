@@ -1,15 +1,3 @@
-$(document).ready(function() {
-  $("form#survey").submit(function(event) {
-    event.preventDefault();
-    const number = parseInt($("input#number").val());
-    $(".calculating").hide();
-    $(".output").hide();
-
-    window.scrollTo(0,document.body.scrollHeight);
-  });
-});
-
-
 function rogers(number) {
   const initialArray = [];
     for (let index = 0; index <= number; index ++) {
@@ -31,5 +19,20 @@ function rogers(number) {
   // console.log(responseArray[12]);
   // console.log(responseArray[20]);
   // console.log(responseArray[32]);
+  $(".output").text(responseArray);
   return responseArray;
 }
+
+$(document).ready(function() {
+  $("form").submit(function(event) {
+    event.preventDefault();
+    let userNumber = parseInt($("input#number").val());
+    console.log(userNumber);
+    $(".calculating").hide();
+    $(".output").hide();
+    $(".calculating").show();
+    $(".output").show();
+    rogers(userNumber);
+    // window.scrollTo(0,document.body.scrollHeight);
+  });
+});
