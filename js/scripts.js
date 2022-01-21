@@ -10,12 +10,14 @@ $(document).ready(function() {
 });
 
 function rogers(number) {
-  let initialArray = number.toString().split("");
-  let responseArray = []
+  const initialArray = [];
+    for (let index = 0; index <= number; index ++) {
+      initialArray.push(index)
+    };
+    console.log(initialArray);
+  const responseArray = []
   initialArray.forEach(function(number) {
-    if (number[i] === "3" && number[i+1] === "2") {
-      responseArray.push("Won't you be my neighbor?");
-    } else if (number === "1") {
+    if (number === "1") {
       responseArray.push("Beep!");
     } else if (number === "2") {
       responseArray.push("Boop!");
@@ -25,5 +27,8 @@ function rogers(number) {
       responseArray.push(number);
     }
   });
+  // console.log(responseArray[12]);
+  // console.log(responseArray[20]);
+  // console.log(responseArray[32]);
   return responseArray;
 }

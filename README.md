@@ -69,9 +69,13 @@ Test: "Function should pass previous tests, and change all '3's digits to the st
 Code: rogers(123)
 Expected Output: ["Beep!", "Boop!", "Won't you be my neighbor?"]
 
-Test: "Function should pass previous tests, and change the '32' to the string 'Won't you be my neighbor?'"
+<!-- Test: "Function should pass previous tests, and change the '32' to the string 'Won't you be my neighbor?'"
 Code: rogers(12332)
-Expected Output: ["Beep!", "Boop!", "Won't you be my neighbor?", "Won't you be my neighbor?"]
+Expected Output: ["Beep!", "Boop!", "Won't you be my neighbor?", "Won't you be my neighbor?"] -->
+
+Test: "Function should take a number, and return an array of all number values, up to, and including the number submitted"
+Code: rogers(5)
+Expected Output: ["0", "1", "2", "3", "4", "5"]
 
 ## Known Bugs 
 
