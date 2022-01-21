@@ -15,13 +15,13 @@ function rogers(number) {
       responseArray.push(number);
     }
   });
-  $("#result").html(responseArray.join(", "));
-  return responseArray.join(" ");
+  let responseString = responseArray.join(", ")
+  $("#result").html(responseString);
+  let reverse = responseArray.reverse().join(", ");
+  $("#reverseResult").html(reverse);
+  return responseString;
 }
 
-function missyElliot(string) {
-
-}
 
 $(document).ready(function() {
   $("form").submit(function(event) {
@@ -52,10 +52,7 @@ $(document).ready(function() {
     $(".calculating").hide();
     $(".output").hide();
     $("#result").hide();
-    setTimeout(function() {
-      $(".missy").show();
-      window.scrollTo(0,document.body.scrollHeight);
-    }, 700);
+    $(".missy").show();
   });
 });
 
