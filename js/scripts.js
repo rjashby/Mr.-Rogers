@@ -19,10 +19,15 @@ function rogers(number) {
   return responseArray.join(" ");
 }
 
+function missyElliot(string) {
+
+}
+
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
     let userNumber = parseInt($("input#number").val());
+    $('input[type="text"]').val('');
     $(".calculating").hide();
     $(".output").hide();
     setTimeout(function() {
@@ -33,6 +38,7 @@ $(document).ready(function() {
       $(".output").show();
       window.scrollTo(0,document.body.scrollHeight);
     }, 4800);
+    $("#insertNum").text(userNumber);
     rogers(userNumber);
     setTimeout(function() {
       $("#warn").show();
@@ -41,6 +47,8 @@ $(document).ready(function() {
   });
 
   $("button#warn").click(function() {
+    let soundclick = document.getElementById("myAudio");
+    soundclick.play();
     $(".calculating").hide();
     $(".output").hide();
     $("#result").hide();
