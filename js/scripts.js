@@ -15,8 +15,8 @@ function rogers(number) {
       responseArray.push(number);
     }
   });
-  $(".output").html(responseArray);
-  return responseArray;
+  $("#result").html(responseArray.join(", "));
+  return responseArray.join(" ");
 }
 
 $(document).ready(function() {
@@ -26,9 +26,14 @@ $(document).ready(function() {
     console.log(userNumber);
     $(".calculating").hide();
     $(".output").hide();
-    $(".calculating").show();
-    $(".output").show();
+    setTimeout(function() {
+      $(".calculating").show();
+      window.scrollTo(0,document.body.scrollHeight);
+    }, 300);
+    setTimeout(function() {
+      $(".output").show();
+      window.scrollTo(0,document.body.scrollHeight);
+    }, 4800);
     rogers(userNumber);
-    // window.scrollTo(0,document.body.scrollHeight);
   });
 });

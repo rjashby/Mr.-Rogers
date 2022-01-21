@@ -29,6 +29,10 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+}
+
 h3 {
   text-align: center;
 }
@@ -39,4 +43,9 @@ button {
 
 input {
   border: 2px solid black;
+}
+
+p {
+  font-size: larger;
+  text-align: center;
 }
