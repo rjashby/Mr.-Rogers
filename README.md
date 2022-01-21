@@ -53,6 +53,9 @@ Test: "Function should take in a single number and return an array of that numbe
 Code: rogers(1)
 Expected Output: [1]
 
+Test: "Function should take in a multi-digit number and return an array of that number."
+Code: rogers(123)
+Expected Output: [1, 2, 3]
 
 ## Known Bugs 
 
