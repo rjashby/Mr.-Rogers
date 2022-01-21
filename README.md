@@ -55,11 +55,15 @@ Expected Output: [1]
 
 Test: "Function should take in a multi-digit number and return an array of that number."
 Code: rogers(123)
-Expected Output: [1, 2, 3]
+Expected Output: ["1", "2", "3"]
 
-Test: "Function should take in a multi-digit number, return an array, and change all '1' digits to the string 'Beep!'"
+Test: "Function return an array, and change all '1' digits to the string 'Beep!'"
 Code: rogers(123)
-Expected Output: ["Beep!", 2, 3]
+Expected Output: ["Beep!", "2", "3"]
+
+Test: "Function should return an array, changing all '1's digits to the string 'Beep!', and all '2's digits to the string 'Boop!'"
+Code: rogers(123)
+Expected Output: ["Beep!", "Boop!", "3"]
 
 ## Known Bugs 
 
