@@ -23,17 +23,32 @@ $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
     let userNumber = parseInt($("input#number").val());
-    console.log(userNumber);
     $(".calculating").hide();
     $(".output").hide();
     setTimeout(function() {
       $(".calculating").show();
       window.scrollTo(0,document.body.scrollHeight);
-    }, 300);
+    }, 400);
     setTimeout(function() {
       $(".output").show();
       window.scrollTo(0,document.body.scrollHeight);
     }, 4800);
     rogers(userNumber);
+    setTimeout(function() {
+      $("#warn").show();
+      window.scrollTo(0,document.body.scrollHeight);
+    }, 6000);
+  });
+
+  $("button#warn").click(function() {
+    $(".calculating").hide();
+    $(".output").hide();
+    $("#result").hide();
+    setTimeout(function() {
+      $(".missy").show();
+      window.scrollTo(0,document.body.scrollHeight);
+    }, 700);
   });
 });
+
+

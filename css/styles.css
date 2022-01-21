@@ -12,6 +12,16 @@ body {
   border: 4px solid black;
 }
 
+.missy {
+  display: none;
+  background-color: white;
+  border: 4px solid black;
+}
+
+#warn {
+  display: none;
+}
+
 div {
   margin: 2rem;
   border: 2rem;
