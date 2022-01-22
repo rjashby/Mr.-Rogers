@@ -59,9 +59,16 @@ $(document).ready(function() {
   });
 });
 
-function rogersREGEX (number) {
-  let myString = number.toString().replace(/["3"]/g, "Won't you be my neighbor? ");
-  let secondString = myString.replace(/["2"]/g, "Boop! ")
-  let finalString = secondString.replace(/["1"]/g, "Beep! ")
-  return finalString;
-}
+// WORK IN PROGRESS - ATTEMPTING REGEX VERSION - BUGGED
+
+// function rogersREGEX (number) {
+//   const initialArray = [];
+//     for (let index = 0; index <= number; index ++) {
+//       initialArray.push(index);
+//     };
+//   let joinString = initialArray.join(" ");  
+//   let myString = joinString.replace(/["3"]/g, "Won't you be my neighbor? ");
+//   let secondString = myString.replace(/["2"]/g, "Boop! ")
+//   let finalString = secondString.replace(/["1"]/g, "Beep! ")
+//   return finalString;
+// }
