@@ -59,4 +59,9 @@ $(document).ready(function() {
   });
 });
 
-
+function rogersREGEX (number) {
+  let myString = number.toString().replace(/["3"]/g, "Won't you be my neighbor? ");
+  let secondString = myString.replace(/["2"]/g, "Boop! ")
+  let finalString = secondString.replace(/["1"]/g, "Beep! ")
+  return finalString;
+}
