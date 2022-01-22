@@ -95,7 +95,7 @@ Expected Output: [0, 'Beep!', 'Boop!', "Won't you be my neighbor?", 4, 5, ... 'W
 
 ## Known Bugs 
 
-* _No Known Bugs_  
+* _Secondary click function interferes with the ability to resubmit initial form, but only if button is clicked. If left alone, form can be resubmitted repeatedly by user. However, if secondary button is clicked again, the reversed results will show with the new number submitted. Reload button added for easier use._  
 
 ### License
 

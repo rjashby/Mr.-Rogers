@@ -40,14 +40,17 @@ $(document).ready(function() {
       $(".output").show();
       window.scrollTo(0,document.body.scrollHeight);
     }, 4800);
+    setTimeout(function() {
+      $(".calculating").hide();
+    }, 4800);
     $("#insertNum").text(userNumber);
     rogers(userNumber);
     setTimeout(function() {
       $("#warn").show();
       window.scrollTo(0,document.body.scrollHeight);
-    }, 6000);
+    }, 5800);
   });
-
+  
   $("button#warn").click(function() {
     let soundclick = document.getElementById("myAudio");
     soundclick.play();
@@ -55,9 +58,12 @@ $(document).ready(function() {
     $(".output").hide();
     $("#result").hide();
     $("#missy").show();
+    $("#reload").show();
     window.scrollTo(0,document.body.scrollHeight);
   });
 });
+
+  
 
 // WORK IN PROGRESS - ATTEMPTING REGEX VERSION - BUGGED
 
