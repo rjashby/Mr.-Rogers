@@ -27,7 +27,7 @@ $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
     let userNumber = parseInt($("input#number").val());
-    $('input[type="text"]').val('');
+    $('input[type="number"]').val("");
     $(".calculating").hide();
     $(".output").hide();
     $("#missy").hide();

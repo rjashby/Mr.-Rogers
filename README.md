@@ -3,7 +3,7 @@
 
 #### By _**Ryan Ashby**_ 
 
-#### _This application serves to._ 
+#### _This application serves to take in a number from the user, and change that number into a string of automated responses based on the number inputted._ 
 
 ### _Link to GitHub Repository_
 
@@ -25,7 +25,15 @@
 
 ## Description 
 
-_This application will_
+_This application will take a number from an input field, and by clicking the submit button, the number will be converted into an array of indices, starting at 0 and ending at the number entered._
+
+_The array will be turned it into a string and then altered by replacing some of the numbers with phrases from the show "Mr. Rogers' Neighborhood."_
+
+_More specifically, the application will replace any occurrence of a "3"s digit with the phrase "Won't you be my neighbor?" All "2"s digits will be replaced by the string "Boop!" Finally, all "1"s digits will be replaced by the string "Beep!" The remaining digits will remain unchanged._
+
+_Importance as to the replacement of digits as they appear in multi-digit numbers will take place in the order listed above, starting with "3"s, then "2"s, and then "1"s._
+
+_If the user wishes, they can re-submit their response, which will cause a new ridiculous image to appear, and the initial response given will be provided in reverse_ 
 
 ## Setup/Installation Requirements 
 
