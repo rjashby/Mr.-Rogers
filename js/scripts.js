@@ -30,6 +30,8 @@ $(document).ready(function() {
     $('input[type="text"]').val('');
     $(".calculating").hide();
     $(".output").hide();
+    $("#missy").hide();
+    $("#warn").hide();
     setTimeout(function() {
       $(".calculating").show();
       window.scrollTo(0,document.body.scrollHeight);
@@ -52,7 +54,8 @@ $(document).ready(function() {
     $(".calculating").hide();
     $(".output").hide();
     $("#result").hide();
-    $(".missy").show();
+    $("#missy").show();
+    window.scrollTo(0,document.body.scrollHeight);
   });
 });
 

@@ -1,5 +1,7 @@
 body {
-  background-color: bisque;
+  background-color: #bc4749;
+  color: #f2e8cf;
+  font-size: larger;
 }
 
 .calculating {
@@ -8,14 +10,14 @@ body {
 
 .output {
   display: none;
-  background-color: white;
-  border: 4px solid black;
+  background-color: #126782;
+  border: 4px solid #FF595E;
 }
 
-.missy {
+#missy {
   display: none;
-  background-color: white;
-  border: 4px solid black;
+  background-color: #126782;
+  border: 4px solid #FF595E;
 }
 
 #warn {
@@ -33,6 +35,7 @@ img {
   margin: 1rem;
   margin-left: 15%;
   margin-right: 15%;
+  border-radius: 1rem;
 }
 
 h1 {
@@ -52,7 +55,7 @@ button {
 }
 
 input {
-  border: 2px solid black;
+  border: 5px solid #1982C4;
 }
 
 p {
