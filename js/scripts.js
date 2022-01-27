@@ -16,6 +16,7 @@ function rogers(number) {
     }
   });
   let responseString = responseArray.join(", ")
+  console.log(responseString);
   $("#result").html(responseString);
   let reverse = responseArray.reverse().join(", ");
   $("#reverseResult").html(reverse);
@@ -32,6 +33,7 @@ $(document).ready(function() {
     $(".output").hide();
     $("#missy").hide();
     $("#warn").hide();
+    $("#result").show();
     setTimeout(function() {
       $(".calculating").show();
       window.scrollTo(0,document.body.scrollHeight);
