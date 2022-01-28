@@ -34,6 +34,7 @@ $(document).ready(function() {
     $("#missy").hide();
     $("#warn").hide();
     $("#result").show();
+    rogers(userNumber);
     setTimeout(function() {
       $(".calculating").show();
       window.scrollTo(0,document.body.scrollHeight);
@@ -46,7 +47,6 @@ $(document).ready(function() {
       $(".calculating").hide();
     }, 4800);
     $("#insertNum").text(userNumber);
-    rogers(userNumber);
     setTimeout(function() {
       $("#warn").show();
       window.scrollTo(0,document.body.scrollHeight);
